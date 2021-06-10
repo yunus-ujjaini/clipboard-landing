@@ -1,0 +1,94 @@
+footer{
+    background-color: rgba(159, 171, 178,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10vw;
+    .footer-left{
+        display: flex;
+    }
+    .footer-logo{
+        width: 10vw;
+        img{
+            width: 5vw;
+        }
+    }
+    .footer-links{
+        display: flex;
+        .set{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .footer-link{
+            margin: 0vw 2vw;
+            
+            font-size: 1.5vw;
+            text-decoration: none;
+            color: var(--DarkGrayishBlue);
+            &:hover{
+                color:var(--StrongCyan);
+            }
+        }
+    }
+    .footer-social{
+        display: flex;
+        .social-link{
+            margin: 1vw;
+            &:hover{
+                cursor: pointer;
+                svg path{
+                    fill: var(--StrongCyan);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    footer{
+        background-color: rgba(159, 171, 178,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0vw;
+        .footer-left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-logo{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 5rem;
+            }
+        }
+        .footer-links{
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0rem;
+            .set{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .footer-link{
+                margin: 1rem 0vw;
+                text-align: center;
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: var(--DarkGrayishBlue);
+            }
+        }
+        .footer-social{
+            display: flex;
+            
+            .social-link{
+                margin: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import 'Scss/reset';
+@import 'Scss/fonts';
+@import 'Scss/style';
+@import 'Scss/header';
+@import 'Scss/service';
+@import 'Scss/partners';
+@import 'Scss/footer';
+@import 'Scss/preloader';
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.loadFromBottom{
+    transform: translateY(20vh);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.loadedFromBottom{
+    transition: all 0.5s;
+    transform: translateY(0vh);
+    opacity: 1;
+}
+.loadFromLeft{
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.loadedFromLeft{
+    transition: all 0.5s;
+    transform: translateX(0%);
+    opacity: 1;
+}
+.loadFromRight{
+    transform: translateX(20%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.loadedFromRight{
+    transition: all 0.5s;
+    transform: translateX(0%);
+    opacity: 1;
+}

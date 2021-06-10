@@ -1,0 +1,27 @@
+.partners{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15vw 0vw;
+    .partner{
+        img{
+            width: 10vw;
+        }
+    }
+}
+@media (max-width:800px){
+    .partners{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5rem 0vw;
+        .partner{
+            margin: 2rem 0rem;
+            img{
+                width: 40vw;
+            }
+        }
+    }
+
+}

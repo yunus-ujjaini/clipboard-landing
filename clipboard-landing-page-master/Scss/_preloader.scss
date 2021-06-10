@@ -1,0 +1,85 @@
+.preloader{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    padding: 10vw;
+    top: 0px;
+    left: 0px;
+    animation: hidepreloader 1s 5s 1 forwards;
+    // changeColors 5s 1 forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        margin: auto;
+        animation: rotate 1s 5 forwards;
+        transition: ease-in-out;
+       
+    }
+    .preloader-text{
+        color: var(--StrongCyan);
+        font-size: 3rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            background-color: white;
+            animation: reveal 4.5s 1 forwards;
+            transition: ease-in-out;
+        }
+    }
+    
+}
+@keyframes hidepreloader {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    90%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes changeColors {
+    0%{
+        background-color: white;
+    }
+    20%{
+        background-color: rgb(255, 136, 0);
+    }
+    40%{
+        background-color: rgb(231, 128, 217);
+    }
+    80%{
+        background-color: rgb(219, 169, 178);
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+    }
+}
+@keyframes reveal {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
+}
